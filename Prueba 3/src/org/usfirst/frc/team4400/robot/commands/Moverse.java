@@ -7,11 +7,10 @@ import edu.wpi.first.wpilibj.command.Command;
 /**
  *
  */
-public class Arrancar extends Command {
+public class Moverse extends Command {
 
-    public Arrancar() {
-       requires(Robot.chasis);
-    	
+    public Moverse() {
+        requires(Robot.chasis);
     }
 
     // Called just before this Command runs the first time
@@ -21,7 +20,7 @@ public class Arrancar extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.chasis.runchasis();
+    	Robot.chasis.mover();
     }
 
     // Make this return true when this Command no longer needs to run execute()
